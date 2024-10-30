@@ -1,0 +1,306 @@
+x = 0
+print(x)
+
+x = "it-vedant"
+print(x)
+print(x , 100)
+
+x = 1234.567
+print(x)
+
+print(100 + x)
+
+print("nashik" + "maharashtra")
+
+y = 90
+z = 10
+print(y > z)
+print(y <= z)
+
+name = "kalyani akash dinde"
+college = "met bkc ioe"
+city = "nashik"
+email = "kalyani@itvedant.com"
+pincode = "422003"
+phoneno = "+91-1122334455"
+
+print("Name : ", name)
+print("Email : ", email)
+print("College : ", college)
+print("City : ", city)
+print("Pincode :", pincode)
+print("Phone number : ", phoneno)
+
+name = input("Enter name : ");
+college = input("Enter college : ");
+city = input("Enter city : ");
+email = input("Enter email : ");
+pincode = input("Enter pincode : ");
+phoneno = input("Enter phoneno : ");
+
+print("Name : ", name)
+print("Email : ", email)
+print("College : ", college)
+print("City : ", city)
+print("Pincode :", pincode)
+print("Phone number : ", phoneno)
+
+
+
+n1 = 5
+n2 = 10
+
+print(type(n1))
+print(n1 > n2)  # true / false
+print(n2 > n1)
+
+print("The result of multiplication is : ", n1 * n2)
+
+n1 = "abc"
+print(type(n1))
+
+-----------------------------------------------------------------------
+syntax : 
+
+	if condition:
+		logical stmts
+	else:
+		logical stmts
+
+# to compare two numbers
+#conditional stms : if, elif, else
+
+n1 = input("Enter value for n1 : ")
+n2 = input("Enter value for n2 : ")
+
+if n1 > n2:
+    print(n1, " is greater than ", n2)
+else:
+    print(n2, " is greater than ", n1)
+    
+
+# sum of two numbers if is greater than 50 then display "hello"
+# otherwise display "byee"
+
+#n1 = 10
+#n2 = 60
+
+n1 = int(input("Enter value for n1 : "))
+n2 = int(input("Enter value for n2 : ")
+
+sum = n1 + n2
+print("sum : ", sum)
+if sum > 50:
+    print("Hello")
+else:
+    print("Chalo")
+
+
+# check if a number is divisible by 7 or not.
+n1 = int(input("Enter a value for n1 : "))
+
+if n1 % 7 == 0:
+    print("Divisible")
+else:
+    print("NOT Divisible")
+
+
+# find whether a number is even or odd
+n1 = int(input("Enter value for n1 : "))
+
+if n1 % 2 == 0:
+    print(n1, " is even")
+else:
+    print(n1, " is odd")
+
+-----------------------------------------------------------------------
+syntax : 
+
+	if condition1:
+		logical stmts
+	elif condition2:
+		logical stmts
+	elif condition3:
+		logical stmts
+	.
+	.
+	.
+	else:
+		logical stmts
+
+# find whether a number is divisible by 3 and 7 or not.
+n1 = int(input("Enter a number : "))
+
+if n1 % 3 == 0 and n1 % 7 == 0:
+    print(n1 , "divisible by 3 and 7 both")
+elif n1 % 3 == 0:
+    print(n1 , "divisible by 3 only")
+elif n1 % 7 == 0:
+    print(n1 , "divisible by 7 only")
+else:
+    print(n1, "NOT Divisible by 3 or 7 both")
+
+
+
+### chosing levels from if elif combination
+choice = input("Choose from the levels \n 1. Easy \n 2. Medium \n 3. Difficult \n")
+
+if choice == "Easy" or choice == "easy":
+    print("You chose Easy level")
+elif choice == "Medium" or choice == "medium":
+    print("You chose Medium level")
+elif choice == "Difficult" or choice == "difficult":
+    print("You chose Difficult level")
+else:
+    print("Invalid Level");
+
+
+loops -----------------------------------------------
+# display a message for 10 times  1 ---> 10 gap = 1
+message = input("Enter message : ")
+limit = int(input("Enter the limit : "))
+gap = int(input("Enter the value for gap : "))
+
+for start in range(1, limit+1, gap):
+    print(message, " : ", start)
+
+
+# print summation of first 10 numbers
+# 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 = 55
+# i   i   i  i   i .....              i = sum
+
+sum = 0
+
+for i in range(1, 11):
+    sum = sum + i
+
+print("Summation : ", sum)
+---------------------------------------------------------
+"""
+
+    2 * 1 = 2
+    2 * 2 = 4
+
+"""
+
+num = int(input("Enter a number : "))
+result = 1
+start = int(input("Enter the start for table : "))
+limit = int(input("Enter the limit for table : "))
+
+for i in range(start, limit+1):
+    result = num * i
+    print(num, " * ", i, " = ", result);
+
+
+
+---------------------------------------------------------------
+listOfFruits = ["apple", "banana", "kiwi", "oranges", "mango", "100", 200, True, False, 345.678, "@"]
+
+for f in listOfFruits:
+    print("Fruit : ", f)
+
+
+---------------------------------------------------------------
+listOfNumbers = [100, 200, 300, 400, 500]
+
+for n in listOfNumbers:
+    print(n+50 , "hello")
+
+
+--------------------------------------------------------------
+# find even number s from a list / range
+
+for i in range(0, 11):
+    if(i % 2 == 0):
+        print("Even = ", i)
+
+
+# find the factorial of a given number.
+
+num = int(input("Enter value for num : "))
+factorial = 1
+
+for i in range(num, 1, -1):
+    factorial = factorial * i    
+    print("factorial : ", factorial);
+
+------------------------------------------------------------
+
+--------------------------- 18-Oct-24 ----------------------
+
+
+	start
+	while condition:
+		logic stmt
+		inc/dec
+	
+
+examples : 
+# print hello ten times forwardloop
+
+i = 1
+while i <= 10:
+    print("Hello", "i = ", i)
+    i = i + 1
+
+# print hello ten times reverse loop
+
+i = 10
+while i >= 1:
+    print("Hello", "i = ", i)
+    i = i - 1
+
+
+# print square of first ten numbers
+
+	i	*	i	result
+	1 	* 	1 	= 1
+	2 	* 	2 	= 4
+	3 	* 	3 	= 9
+	4 	* 	4 	= 16
+	.
+	.
+
+i = 1
+result = 1
+while i <= 10:
+    result = i * i
+    print(i, " * ", i, " = ", result)
+    i = i + 1
+
+# print table of given number 
+num = int(input("Enter a number : "))
+i = 1
+result = 1
+while i <= 10:
+    result = num * i
+    print(num, " * ", i, " = ", result)
+    i = i + 1
+
+
+Questions on while : 
+	1. find factorial of a number
+	2. find cube of first n-number
+	3. find reverse of number -> 1234 -> 4321
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
